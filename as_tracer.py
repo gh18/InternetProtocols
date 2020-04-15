@@ -49,7 +49,6 @@ def get_ip_info(ip_address):
 
 # first entry is local router (at least when using Wi-Fi)
 output_parsed = re.findall(r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b", trace_route)[1:]
-# as_parsed = re.match(r'^ASd+$', trace_route)[1:]
 
 
 def print_out_info(parsed_data: list):
