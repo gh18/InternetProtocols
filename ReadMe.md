@@ -2,6 +2,7 @@ A simple ASN Tracing tool
 
 - uses 'traceroute' shell command to trace Domain Names or IP Addresses
 - prints results out to console
+- logs results to a file
 
 
 
