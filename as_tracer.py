@@ -36,7 +36,7 @@ try:
             if '*' not in line:
                 file.writelines(line)
             else:
-                break
+                continue
 except subprocess.CalledProcessError as ex:
     print('Something went wrong: Check or Internet connection or contact your Provider')
     sys.exit()
