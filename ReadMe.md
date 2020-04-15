@@ -1,4 +1,4 @@
-A simple ASN Tracing tool
+A simple ASN Tracing script
 
 - uses 'traceroute' shell command to trace Domain Names or IP Addresses
 - then uses open sources to get information about IP addresses through the route
