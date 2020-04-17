@@ -38,11 +38,12 @@ try:
             else:
                 continue
 except subprocess.CalledProcessError as ex:
-    print('Something went wrong: Check or Internet connection or contact your Provider')
+    print('Something went wrong: Check your Internet connection or contact your Provider')
     sys.exit()
 
 
 # using free Internet sources to get JSON-information about ip_addresses
+# TODO: find the service with encrypted connection (https)
 def get_ip_info(ip_address):
     return json.loads(request.urlopen('http://ip-api.com/json/' + ip_address).read())
 
@@ -58,7 +59,7 @@ def print_out_info(parsed_data: list):
         if info['status'] == 'success':
             print_out_list.append(str(len(print_out_list) + 1) + '\t'
                                   + ip_addr + '\t'
-                                  + info['as'].split(' ')[0] + '\t'           # TODO: fix this
+                                  + info['as'].split(' ')[0] + '\t'           # TODO: find a faster solution
                                   + info['country'] + '\t'
                                   + info['isp'])
 
