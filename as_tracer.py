@@ -7,6 +7,10 @@ import os.path
 import datetime
 
 
+"""
+Корнеев Михаил, КН-203 (ИЕНиМ-280208)
+"""
+
 # constants to simplify further code
 save_path = '/Users/miha/Desktop/logs/'
 filename = 'logs_' + str(format(datetime.datetime.now(), '%Y-%m-%d_%H.%M.%S'))
